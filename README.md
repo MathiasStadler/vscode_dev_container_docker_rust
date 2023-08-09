@@ -7,6 +7,8 @@
 
 ## enticement
 
+- s. [TEST_ON](./TEST_ON.md)
+
 ## install docker on os
 
 ## check vscode
