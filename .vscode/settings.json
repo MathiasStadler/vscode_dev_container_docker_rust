@@ -1,8 +1,12 @@
 {
     "cSpell.words": [
         "Autologin",
+        "containerd",
+        "dearmor",
+        "dpkg",
         "partman",
         "POSTUPGRADE",
+        "runc",
         "trapapa",
         "usersetup",
         "xorg"
