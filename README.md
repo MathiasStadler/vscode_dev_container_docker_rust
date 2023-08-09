@@ -27,16 +27,32 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 >> step 1. apt update add necessary package:
 
 ```bash
-sudo apt-get update && \
-sudo apt-get install ca-certificates curl gnupg
+sudo apt autoclean && \
+sudo apt -y update && \
+sudo apt -y install ca-certificates curl gnupg
 ```
 
 >> step 2. Add Docker’s official GPG key:
 
 ```bash
-sudo install -m 0755 -d /etc/apt/keyrings && \
+DIR="/etc/apt/keyrings"
+if [ -d "$DIR" ]; then
+  # Take action if $DIR exists. #
+  echo "Take directory if exists ${DIR}..."
+else
+echo "The directory if NOT exists create ${DIR}..."
+sudo install -m 0755 -d /etc/apt/keyrings
+fi && \
+echo "install key"
+FILE="/etc/apt/keyrings/docker.gpg"
+if [ -f "$FILE" ]; then
+    echo "Key if exists ${FILE}..."
+    ls -la /etc/apt/keyrings/docker.gpg
+else
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
+ls -la /etc/apt/keyrings/docker.gpg    
+fi
 ```
 
 >> step 3. Use the following command to set up the repository:
