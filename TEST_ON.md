@@ -21,7 +21,7 @@ GNU/Linux\
 ## os version
 
 ```bash
-ubuntu-report show|sed 's/$/\\/'
+ubuntu-report show|sed 's/$/\\/'|sed '$ s/.$//'
 ```
 
 {\
@@ -105,4 +105,4 @@ ubuntu-report show|sed 's/$/\\/'
       "1274": "REBOOT"\
     }\
   }\
-}\
+}
