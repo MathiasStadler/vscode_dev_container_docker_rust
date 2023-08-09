@@ -98,12 +98,22 @@ echo $?
 
 >> DOCKER on os installed :-)
 
-
 ## check vscode --version
 
 ### version
 
-### installed extension
+```bash
+code --version
+1.81.0
+6445d93c81ebe42c4cbd7a60712e0b17d9463e97
+x64
+```
+
+### installed extension with version
+
+```bash
+code --list-extensions  --show-versions
+```
 
 ## start dev container
 
