@@ -24,6 +24,7 @@ GNU/Linux\
 ubuntu-report show|sed 's/$/\\/'|sed '$ s/.$//'
 ```
 
+```bash
 {\
   "Version": "22.04",\
   "OEM": {\
@@ -106,3 +107,4 @@ ubuntu-report show|sed 's/$/\\/'|sed '$ s/.$//'
     }\
   }\
 }
+```
