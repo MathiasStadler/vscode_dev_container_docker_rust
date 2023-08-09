@@ -14,7 +14,7 @@
 > [tutorial from here}(https://docs.docker.com/engine/install/ubuntu/)
 > deinstall all old version
 
-### deinstall all old version
+### deinstall all old version of docker
 
 ```bash
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -27,8 +27,7 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 >> step 1. apt update add necessary package:
 
 ```bash
-sudo apt-get update
-
+sudo apt-get update && \
 sudo apt-get install ca-certificates curl gnupg
 ```
 
