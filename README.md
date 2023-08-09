@@ -58,11 +58,46 @@ fi
 >> step 3. Use the following command to set up the repository:
 
 ```bash
+echo "Update repository - check file exists" 
+FILE="/etc/apt/sources.list.d/docker.list"
+if [ -f "$FILE" ]; then
+    echo "File/repo if exists ${FILE}..."
+    ls -la /etc/apt/sources.list.d/docker.list
+else
+echo "File/repo if NOT exists CREATE ${FILE}..."
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+fi  
 ```
+
+>> step 4. Update the apt package index:
+
+```bash
+sudo apt-get update
+```
+
+>> step 5. Install latest docker engine
+
+```bash
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+>> step 6. Verify that the Docker Engine installation is successful by running the hello-world image
+
+```bash
+sudo docker run hello-world
+```
+
+>> step 7. Check of error via return code - should zero
+
+```bash
+echo $?
+```
+
+>> DOCKER on os installed :-)
+
 
 ## check vscode --version
 
