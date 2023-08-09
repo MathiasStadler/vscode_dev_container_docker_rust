@@ -6,19 +6,19 @@
 uname -a |sed 's/ /\n/g'|sed 's/#//g'
 ```
 
-Linux
-ThinkPad-T430
-5.19.0-50-generic
-50-Ubuntu
-SMP
-PREEMPT_DYNAMIC
-Mon Jul 10 18:24:29 UTC 2023
-x86_64
-x86_64
-x86_64
-GNU/Linux
+Linux\
+ThinkPad-T430\
+5.19.0-50-generic\
+50-Ubuntu\
+SMP\
+PREEMPT_DYNAMIC\
+Mon Jul 10 18:24:29 UTC 2023\
+x86_64\
+x86_64\
+x86_64\
+GNU/Linux\
 
-## software
+## os version
 
 ```bash
 ubuntu-report show
