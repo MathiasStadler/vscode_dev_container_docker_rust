@@ -141,7 +141,7 @@ ms-vscode.remote-explorer@0.4.1
 ms-vscode.remote-server@1.4.0
 ```
 
-### Small [VSCode development Docker container for Rust](https://www.reddit.com/r/rust/comments/ohj69c/vscode_development_docker_container_for_rust/)
+### Hit: Small [VSCode development Docker container for Rust](https://www.reddit.com/r/rust/comments/ohj69c/vscode_development_docker_container_for_rust/)
 
 - [short cut dev container](https://github.com/kherge/sh.dev)
 
@@ -153,8 +153,7 @@ ms-vscode.remote-server@1.4.0
 4. select => Clone a repository from GitHub in a Container Volume
 5. and select a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
 6. select branch name e.g. master
-7. ATTENTION The vscode instance will close and open a new session with your repo
-
+7. ATTENTION This vscode instance will close and open a new session with your repo in a docker container
 
 ### 
 
