@@ -151,8 +151,8 @@ ms-vscode.remote-server@1.4.0
 2. search for => DevContainers: Clone Repository in Container Volume...
 3. select => Clone a repository from GitHub in a Container Volume ...
 4. select => Clone a repository from GitHub in a Container Volume
-5. and select a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
-6. select branch name e.g. master
+5. select => a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
+6. select =>  branch name e.g. master
 7. ATTENTION This vscode instance will close and open a new session with your repo in a docker container
 
 > size of directory
