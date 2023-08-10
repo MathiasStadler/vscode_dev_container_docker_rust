@@ -145,15 +145,16 @@ ms-vscode.remote-server@1.4.0
 
 - [short cut dev container](https://github.com/kherge/sh.dev)
 
-### you start a dev container explain in the yt vid
+### you start a dev container explained in the yt video too
 
-```terminal
-# press [strg]+[shift]+[p]
-# search for=> DevContainers: Clone Repository in Container Volume...
-# select => Clone a repository from GitHub in a Container Volume
-# and select a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
-# select branch name e.g. master  
-```
+1. press [strg]+[shift]+[p]
+2. search for => DevContainers: Clone Repository in Container Volume...
+3. select => Clone a repository from GitHub in a Container Volume ...
+4. select => Clone a repository from GitHub in a Container Volume
+5. and select a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
+6. select branch name e.g. master
+7. ATTENTION The vscode instance will close and open a new session with your repo
+
 
 ### 
 
