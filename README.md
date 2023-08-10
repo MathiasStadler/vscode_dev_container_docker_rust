@@ -157,9 +157,9 @@ ms-vscode.remote-server@1.4.0
 
 > size of directory
 >
- ```bash
+```bash
  du -hs ./target/
-> ```
+```
 
 ### 
 
