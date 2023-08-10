@@ -5,7 +5,9 @@
 > move container to raspberry
 > control container remote
 
-## enticement
+## [yt tutorial from here](https://www.youtube.com/watch?v=SDa3v4Quj7Y)
+
+## environment
 
 - s. [TEST_ON](./TEST_ON.md)
 
