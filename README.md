@@ -155,13 +155,21 @@ ms-vscode.remote-server@1.4.0
 6. select =>  branch name e.g. master
 7. ATTENTION This vscode instance will close and open a new session with your repo in a docker container
 
-> size of directory
+> size of directory with container
 >
 ```bash
  du -hs ./target/
 ```
 
-### 
+### [Dev Containers Tips and Tricks](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks)
+
+#### [install the Resource Monitor extension](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor&ssr=false#overview)
+
+```bash
+code --install-extension mutantdino.resourcemonitor
+```
+
+### open terminal im container
 
 ## start dev container
 
