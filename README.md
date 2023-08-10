@@ -98,7 +98,7 @@ sudo docker run hello-world
 echo $?
 ```
 
->> DOCKER on os installed :-)
+>> DOCKER on os is installed :-)
 
 ## check vscode --version
 
@@ -116,6 +116,46 @@ x64
 ```bash
 code --list-extensions  --show-versions
 ```
+
+## run container-dev inside vscode
+
+### install extensions in vscode via cli/bash
+
+```bash
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+```
+
+### stop and start vscode
+
+### check extention are installed
+
+```bash
+code --list-extensions  --show-versions |grep remote
+# you should this
+ms-vscode-remote.remote-containers@0.304.0
+ms-vscode-remote.remote-ssh@0.102.0
+ms-vscode-remote.remote-ssh-edit@0.86.0
+ms-vscode-remote.remote-wsl@0.81.0
+ms-vscode-remote.vscode-remote-extensionpack@0.24.0
+ms-vscode.remote-explorer@0.4.1
+ms-vscode.remote-server@1.4.0
+```
+
+### Small [VSCode development Docker container for Rust](https://www.reddit.com/r/rust/comments/ohj69c/vscode_development_docker_container_for_rust/)
+
+- [short cut dev container](https://github.com/kherge/sh.dev)
+
+### you start a dev container explain in the yt vid
+
+```terminal
+# press [strg]+[shift]+[p]
+# search for=> DevContainers: Clone Repository in Container Volume...
+# select => Clone a repository from GitHub in a Container Volume
+# and select a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
+# select branch name e.g. master  
+```
+
+### 
 
 ## start dev container
 

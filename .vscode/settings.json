@@ -5,9 +5,12 @@
         "containerd",
         "dearmor",
         "dpkg",
+        "extensionpack",
         "partman",
         "POSTUPGRADE",
         "runc",
+        "Stadler",
+        "strg",
         "trapapa",
         "usersetup",
         "xorg"
