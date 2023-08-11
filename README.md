@@ -13,20 +13,19 @@
 
 ## install docker on ubuntu
 
-> [tutorial from here}(https://docs.docker.com/engine/install/ubuntu/)
-> deinstall all old version
+> [tutorial from here](https://docs.docker.com/engine/install/ubuntu/)
 
 ### deinstall all old version of docker
 
 ```bash
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
-
 ```
 
 ### install newest version via download.docker.com
 
 > follow the website
->> step 1. apt update add necessary package:
+>
+> step 1. apt update add necessary package:
 
 ```bash
 sudo apt autoclean && \
@@ -34,7 +33,7 @@ sudo apt -y update && \
 sudo apt -y install ca-certificates curl gnupg
 ```
 
->> step 2. Add Docker’s official GPG key:
+> step 2. Add Docker’s official GPG key:
 
 ```bash
 DIR="/etc/apt/keyrings"
@@ -53,14 +52,14 @@ if [ -f "$FILE" ]; then
 else
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
-ls -la /etc/apt/keyrings/docker.gpg    
+ls -la /etc/apt/keyrings/docker.gpg
 fi
 ```
 
->> step 3. Use the following command to set up the repository:
+> step 3. Use the following command to set up the repository:
 
 ```bash
-echo "Update repository - check file exists" 
+echo "Update repository - check file exists"
 FILE="/etc/apt/sources.list.d/docker.list"
 if [ -f "$FILE" ]; then
     echo "File/repo if exists ${FILE}..."
@@ -71,34 +70,34 @@ echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-fi  
+fi
 ```
 
->> step 4. Update the apt package index:
+> step 4. Update the apt package index:
 
 ```bash
 sudo apt-get update
 ```
 
->> step 5. Install latest docker engine
+> step 5. Install latest docker engine
 
 ```bash
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
->> step 6. Verify that the Docker Engine installation is successful by running the hello-world image
+> step 6. Verify that the Docker Engine installation is successful by running the hello-world image
 
 ```bash
 sudo docker run hello-world
 ```
 
->> step 7. Check of error via return code - should zero
+> step 7. Check of error via return code - should zero
 
 ```bash
 echo $?
 ```
 
->> DOCKER on os is installed :-)
+> DOCKER on os is installed :-)
 
 ## check vscode --version
 
@@ -111,7 +110,7 @@ code --version
 x64
 ```
 
-### installed extension with version
+### list installed extension with version on vscode terminal/cli
 
 ```bash
 code --list-extensions  --show-versions
@@ -127,7 +126,7 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
 ### stop and start vscode
 
-### check extention are installed
+### check extensions for remote development are installed
 
 ```bash
 code --list-extensions  --show-versions |grep remote
@@ -151,12 +150,12 @@ ms-vscode.remote-server@1.4.0
 2. search for => DevContainers: Clone Repository in Container Volume...
 3. select => Clone a repository from GitHub in a Container Volume ...
 4. select => Clone a repository from GitHub in a Container Volume
-5. select => a sample GitHub repo e.g.  MathiasStadler/vscode_dev_container_hello_world_rust
-6. select =>  branch name e.g. master
+5. select => a sample GitHub repo e.g. MathiasStadler/vscode_dev_container_hello_world_rust
+6. select => branch name e.g. master
 7. ATTENTION This vscode instance will close and open a new session with your repo in a docker container
 
 > size of directory with container
->
+
 ```bash
  du -hs ./target/
 ```
